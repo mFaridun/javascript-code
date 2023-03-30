@@ -73,13 +73,23 @@
 
 
 // Arrow function
-const juftToq = element => {
-    if (element % 2 === 0) {
-    console.log(`${element} juft son.`);
-  }
-  else {
-    console.log(`${element} juft son emas.`);
-  }
+// const juftToq = element => {
+//     if (element % 2 === 0) {
+//     console.log(`${element} juft son.`);
+//   }
+//   else {
+//     console.log(`${element} juft son emas.`);
+//   }
+// }
+
+// juftToq(9);
+
+
+// Sonni teskari o'giramiz
+function reverseDec(number) {
+  const numString = String(number); //sonni stringga o'tkazamiz
+  const reverseNum = numString.split('').reverse().join(''); //split orqali arrayga aylantirib, join orqali yana stringga o'tkazamiz
+  return Number(reverseNum);
 }
 
-juftToq(9);
+console.log(reverseDec(12345));
