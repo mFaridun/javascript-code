@@ -86,10 +86,24 @@
 
 
 // Sonni teskari o'giramiz
-function reverseDec(number) {
-  const numString = String(number); //sonni stringga o'tkazamiz
-  const reverseNum = numString.split('').reverse().join(''); //split orqali arrayga aylantirib, join orqali yana stringga o'tkazamiz
-  return Number(reverseNum);
-}
+// function reverseDec(number) {
+//   const numString = String(number); //sonni stringga o'tkazamiz
+//   const reverseNum = numString.split('').reverse().join(''); //split orqali arrayga aylantirib, join orqali yana stringga o'tkazamiz
+//   return Number(reverseNum);
+// }
 
-console.log(reverseDec(12345));
+// console.log(reverseDec(12345));
+
+
+// const myText = document.querySelector('.text');
+
+// myText.innerHTML = '<h2>Hello World</h2>'
+
+
+const btn = document.querySelector('.btn');
+const text = document.querySelector('.text');
+
+btn.addEventListener('click', function() {
+  text.textContent = 'chesck';
+  // text.remove('text');
+})
